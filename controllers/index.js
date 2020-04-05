@@ -76,4 +76,15 @@ homeController.search = async (req, res) => {
         file_name: file_name
     });
 }
+
+homeController.sort = async (req, res) => {
+    let index = Number(req.params.index);
+    if (! data) {
+        return res.redirect('back');
+    }
+    await data.sort((a, b)=>{
+        return a[keys[index]] - b[keys[index]];
+    });
+    return res.redirect('back');
+}
 module.exports = homeController;

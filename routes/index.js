@@ -17,6 +17,7 @@ const homeController = require('../controllers/index');
 router.get('/', homeController.home);
 router.get('/:filename', homeController.uploadThisFile);
 router.post('/search/', homeController.search);
+router.get('/sort/:index', homeController.sort);
 router.post('/upload_file', upload.single('myFile'), homeController.uploadFile);
 router.get('/*', (req, res) => {
     return res.status(404).send('<h1>404 Not found</h1>');
