@@ -7,7 +7,7 @@ var storage = multer.diskStorage({
       cb(null, 'uploads')
     },
     filename: function (req, file, cb) {
-      cb(null, file.fieldname + '-' + Date.now())
+      cb(null, file.fieldname + '-' + Date.now() + ".csv")
     }
   })
    
@@ -15,6 +15,8 @@ var storage = multer.diskStorage({
 
 const homeController = require('../controllers/index');
 router.get('/', homeController.home);
+router.get('/:filename', homeController.uploadThisFile);
+router.post('/search/', homeController.search);
 router.post('/upload_file', upload.single('myFile'), homeController.uploadFile);
 router.get('/*', (req, res) => {
     return res.status(404).send('<h1>404 Not found</h1>');
