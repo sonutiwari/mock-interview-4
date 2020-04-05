@@ -1,0 +1,34 @@
+{
+  "name": "mock-interview-4",
+  "version": "1.0.0",
+  "description": "Front end hiring challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonutiwari/mock-interview-4.git"
+  },
+  "keywords": [
+    "JS",
+    "EJS",
+    "CSV",
+    "node",
+    "express",
+    "table",
+    "column",
+    "sort"
+  ],
+  "author": "Sonu Tiwari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sonutiwari/mock-interview-4/issues"
+  },
+  "homepage": "https://github.com/sonutiwari/mock-interview-4#readme",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1"
+  }
+}
