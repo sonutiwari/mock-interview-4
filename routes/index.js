@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+let db = require('../config/index');
 var multer  = require('multer');
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
