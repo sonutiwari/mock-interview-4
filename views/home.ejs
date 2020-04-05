@@ -8,7 +8,19 @@
 </head>
 <body>
     <h1 class="text-center">Hello World!</h1>
+    <form class="m-5" enctype="multipart/form-data" class="text-center" method="POST" action="/upload_file">
+        <div class="custom-file">
+          <input name="myFile" id="fileInput" type="file" accept=".csv" class="custom-file-input" id="customFile">
+          <label class="custom-file-label" for="customFile">Choose file</label>
+        </div> <br>
+        <input type="submit" value="Read This file" class="btn btn-success m-3">
+    </form>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/utilities.js"></script>
 </body>
 </html>

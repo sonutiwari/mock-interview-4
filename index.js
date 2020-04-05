@@ -1,12 +1,10 @@
 const express = require('express');
+
 const app = express();
 const PORT = 8000 ;
 
-app.use(express.urlencoded({extended: true}));
-app.use(express.json());
 
-app.use(express.static('./assets'))
-
+app.use(express.static('./assets'));
 // set up the view engine
 app.set('view engine','ejs');
 app.set('views','./views');
